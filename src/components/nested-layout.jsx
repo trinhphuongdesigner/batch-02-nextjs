@@ -3,9 +3,9 @@ import React from 'react';
 function NestedLayout({ children }) {
   return (
     <>
-      Nested nav
+        <h1>Nested level 1</h1>
         <div>{children}</div>
-        Nested footer
+        <h1>Nested footer lv 1</h1>
     </>
   );
 }

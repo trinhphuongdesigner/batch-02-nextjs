@@ -6,5 +6,5 @@ export default function App({ Component, pageProps }) {
 
   return <Layout>
     {getLayout(<Component {...pageProps} />)}
-  </Layout>
+  </Layout> 
 }

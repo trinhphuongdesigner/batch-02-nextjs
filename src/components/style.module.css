@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  height: 44px;
+  background-color: floralwhite;
+}
+
+.menu__item {
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+}
