@@ -107,7 +107,7 @@ export async function getStaticProps(req) {
       },
 
       // revalidate: 10,
-      revalidate: 60 * 60 * 24 * 30,
+      // revalidate: 60 * 60 * 24 * 30,
     };
   } catch (error) {
     return {
