@@ -91,7 +91,7 @@ export async function getStaticPaths() {
     //   },
     // })),
     // fallback: false, // dự liệu không biến động (không thêm mới, không chỉnh sửa)
-    // fallback: blocking, || dữ liệu có tính biến động, nhiều dữ liệu - không trả về phiên bản draff
+    // fallback: blocking, // || dữ liệu có tính biến động, nhiều dữ liệu - không trả về phiên bản draff
     fallback: true, // dữ liệu có tính biến động, nhiều dữ liệu - có trả về phiên bản draff
   };
 }
@@ -106,7 +106,7 @@ export async function getStaticProps(req) {
         product: response.data.payload,
       },
 
-      // revalidate: 10,
+      revalidate: 10,
       // revalidate: 60 * 60 * 24 * 30,
     };
   } catch (error) {
